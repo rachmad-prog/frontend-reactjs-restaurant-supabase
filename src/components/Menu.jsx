@@ -24,7 +24,7 @@ function Menu({
   const [addConfirmItem, setAddConfirmItem] = useState(null);
   const [isAddConfirmOpen, setIsAddConfirmOpen] = useState(false);
 
-  const BACKEND_URL = "http://localhost:3307";
+  const BACKEND_URL = "https://backend-express-restaurant-midtrans.vercel.app";
 
   useEffect(() => {
     const fetchMenus = async () => {

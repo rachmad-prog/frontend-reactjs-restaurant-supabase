@@ -57,7 +57,7 @@ function App() {
 
   const [refreshMenuTrigger, setRefreshMenuTrigger] = useState(0);
 
-  const API_URL = "http://localhost:3307/api";
+  const API_URL = "https://backend-express-restaurant-midtrans.vercel.app/api";
 
   // 1. Cek Sesi Login otomatis
   useEffect(() => {
@@ -154,7 +154,10 @@ function App() {
       }
     } catch (error) {
       console.error("Gagal memuat riwayat pesanan:", error);
-      notify("Terjadi kesalahan jaringan saat memuat riwayat pesanan.", "error");
+      notify(
+        "Terjadi kesalahan jaringan saat memuat riwayat pesanan.",
+        "error",
+      );
     }
   };
 
